@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0%;
+    padding: 0%;
+    
+
+
+
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif; 
+}
+ 
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0% !important;
+    padding: 0% !important;
+    
+}
+p{
+    margin: 0% !important;
+}
+
+.welcome_part li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+.welcome_part{
+    background: #116BC0;
+}
+.welcome_part li a{
+    color: #E8E9EA;
+}
+.welcome_part li a:hover{
+    color: #353435;
+}
+
+/* nav_bar */
+.nav-link{
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif; 
+}
+
+.nav-link:hover {
+    color: #116BC0 !important;
+
+}
+/* nav_bar */
+
+:root {
+   --oswald:'Oswald',sans-serif; 
+   --sanse:'Open sans' ,sans-serif; 
+}
+
+/* hiro part start */
+.hiro_part{
+    background: url(hero.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 0px;
+}
+.hiro_con h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 800;
+}
+.hiro_con h1:nth-child(1){
+    font-size: 36px;
+    font-weight: 400;
+}
+.hiro_con p{
+    padding: 20px 0px;
+    line-height: 26px;
+}
+.hiro_con a{
+    background: #116BC0;
+    border: 1px solid #116BC0;
+    border-radius: 0px;
+    font-family: var(--oswald);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.hiro_con a:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+/* hiro part end */
+
+
+/* about_part strant */
+.about_part{
+ padding-top: 60px;
+ 
+}
+.about_head {
+    padding-bottom:40px;
+}
+.about_head h3{
+    line-height: 0px;
+}
+.about_con p{
+    font-size: 16px;
+    color: #555;
+}
+.about_con p:nth-child(2){
+    padding-top: 15px;
+    
+}
+/* about_part strant */
+
+/* service_part strant */
+
+.service_con{
+    padding: 50px 25px 20px;
+    background:#F1F1F1;
+    position: relative;
+    transition: .3s;
+}
+.service_inon{
+    height: 90px;
+    width: 90px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px double white;
+    transition: .3s ;
+}
+.service_con:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.service_con:hover .service_inon{
+    background: #116BC0;
+}
+
+/* service_part end */
+
+
+
+/* portfolio part strat */
+.port_img{
+    position: relative;
+    
+}
+.port_img_overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+}
+.port_img:hover .port_img_overlay{
+    opacity: 1;
+}
+.port_img_overlay a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    background:#116BC0;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+/* portfolio part end */
+
+
+
+/* team part start  */
+.team_img{
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+}
+.team_img:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.team_con h4{
+transition: .3s;
+}
+.team_img:hover ~ h4{
+    color: #116BC0;
+}
+.team_img:hover .team_img_overlai{
+    opacity: 1;
+    width: 33.33%;
+}
+.team_img_overlai{
+    position:absolute;
+    right:0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+}
+.team_img_overlai ul {
+    margin: 0;
+    padding: 0;
+}
+.team_img_overlai ul li a{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    margin: 5px 0px;
+    transition: .3s;
+}
+.team_img_overlai ul li a:hover{
+    background: #116BC0;
+    border-color: #116BC0;
+}
+/* team part end  */
+/* testi part strar */
+.testi_part{
+    padding: 60px 0px;
+}
+.testi_con{
+    background:#F1F1F1;
+    margin-top: 40px;
+    padding: 20px ;
+}
+.testi_icon{
+    color: #5BC5F4;
+    
+}
+.testi_con{
+    position: relative;
+}
+.dibaider{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background:#f1f1f1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+/* testi part end */
+
+/* footer part star */
+.pre_footer_part{
+    padding: 20px 0px;
+    background: #353535;
+}
+.pre_foot_icon{
+    width: 40px;
+    height: 40px;
+    background:#5BC5F4;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.pre_foot_con_inner{
+    font-size: 14px;
+}
+.pre_fod_con_ul a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0px;
+    transition: .3s;
+}
+.pre_fod_con_ul a:hover{
+    color: #5BC5F4;
+}
+/*pre footer part end */
+/*footer part strat */
+.footer_part{
+    padding: 15px 0px;
+    background: #555;
+}
+.footer_part_con a{
+    color:#5BC5F4 ;
+    text-decoration: none;
+    font-family: var(--oswald);
+}
+/*footer part end */
